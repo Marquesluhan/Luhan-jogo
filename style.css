@@ -1,0 +1,130 @@
+/* Define margens e preenchimentos como 0 e utiliza box-sizing para incluir bordas e padding no tamanho total do elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a base de cálculo para tamanhos relativos (rem), facilitando ajustes proporcionais */
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte principal */
+    color: #34355B; /* Cor principal do texto */
+    background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%); /* Fundo com gradiente */
+    display: grid; /* Centraliza o conteúdo */
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    min-height: 100vh; /* Altura mínima da tela inteira */
+    font-size: 1.6rem; /* Tamanho base do texto */
+    padding: 2rem; /* Espaçamento interno */
+}
+
+/* Esconde elementos com a classe "hiden" */
+.hiden {
+    display: none;
+}
+
+/* Estilo principal do container do jogo */
+main {
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 0.6rem; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    padding: 4.8rem 6.4rem 6.4rem; /* Espaçamento interno */
+    max-width: 600px; /* Largura máxima */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo do título principal */
+main h1 {
+    font-size: 2.4rem; /* Tamanho do texto */
+    font-weight: 600; /* Negrito */
+    margin-bottom: 1.6rem; /* Espaçamento inferior */
+}
+
+/* Estilo para o parágrafo na primeira tela */
+main .screen1 p {
+    font-family: 'DM Sans', sans-serif; /* Fonte secundária */
+    color: rgba(52, 53, 91, 0.8); /* Cor com opacidade reduzida */
+    margin-bottom: 4.8rem; /* Espaçamento inferior */
+    font-weight: 400; /* Peso regular */
+}
+
+/* Estilo do formulário */
+main form {
+    display: flex; /* Layout em linha */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 0.5rem; /* Espaço entre os elementos */
+}
+
+/* Estilo do campo de entrada */
+main form input {
+    width: 6rem; /* Largura fixa */
+    height: 3.8rem; /* Altura fixa */
+    border-radius: 0.4rem; /* Bordas arredondadas */
+    border: 1px solid #ced4da; /* Borda cinza */
+    padding: 0.5rem; /* Espaçamento interno */
+    font-size: 1.6rem; /* Tamanho do texto */
+}
+
+/* Estilo do botão no formulário */
+main form button {
+    width: auto; /* Ajusta automaticamente à largura do texto */
+    padding: 0 1.5rem; /* Espaçamento horizontal */
+    height: 3.8rem; /* Altura fixa */
+    border-radius: 0.4rem; /* Bordas arredondadas */
+    background-color: #7879F1; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    cursor: pointer; /* Ícone de ponteiro no hover */
+    font-size: 1.6rem; /* Tamanho do texto */
+    transition: background-color 0.3s ease; /* Efeito de transição no hover */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+main form button:hover {
+    background-color: #5a5bf1; /* Altera a cor de fundo */
+}
+
+/* Estilo do texto de feedback na segunda tela */
+main .screen2 p {
+    font-family: 'DM Sans', sans-serif; /* Fonte secundária */
+    font-weight: 400; /* Peso regular */
+    font-size: 2.4rem; /* Tamanho do texto */
+    margin-bottom: 3.3rem; /* Espaçamento inferior */
+}
+
+/* Estilo do botão na segunda tela */
+main .screen2 button {
+    background-color: #7879F1; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    border-radius: 0.4rem; /* Bordas arredondadas */
+    border: none; /* Remove borda padrão */
+    cursor: pointer; /* Ícone de ponteiro no hover */
+    font-size: 1.6rem; /* Tamanho do texto */
+    transition: background-color 0.3s ease; /* Efeito de transição no hover */
+}
+
+/* Efeito ao passar o mouse sobre o botão da segunda tela */
+main .screen2 button:hover {
+    background-color: #5a5bf1; /* Altera a cor de fundo */
+}
+
+/* Estilo para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+    main {
+        padding: 3rem 2rem; /* Reduz o espaçamento interno */
+    }
+
+    main h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    main .screen1 p, main .screen2 p {
+        font-size: 1.8rem; /* Reduz o tamanho dos parágrafos */
+    }
+}
